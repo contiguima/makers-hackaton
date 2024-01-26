@@ -13,6 +13,14 @@ body{
   
 }
 
+
+h1{
+  font-size: clamp(22px, 2vw,32px);
+}
+
+h2{
+  font-size: clamp(18px, 1,7vw, 24px);
+}
 main{
    color:white;
    display: flex;
@@ -26,3 +34,8 @@ main{
   padding: 1em;
 }
 
+@media only screen and (max-width: 600px) {
+  .mainpage-text{
+      padding:0;
+  }
+}

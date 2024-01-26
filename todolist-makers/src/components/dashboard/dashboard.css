@@ -41,8 +41,8 @@
     color: white;
     background-color: #301b3f;
     font-weight: 700;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 
 .new-task button:hover{
@@ -56,3 +56,11 @@
     flex-direction: column;
     gap: 1em;
 }
+
+@media only screen and (max-width: 600px) {
+    .dashboard{
+        max-width: 300px;
+        display: flex;
+        align-self: center;
+    }
+  }
