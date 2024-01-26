@@ -1,0 +1,79 @@
+.task{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 0.2em;
+
+}
+.edit-input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+  font-family: "Sora", sans-serif;
+  font-size: 2vh;
+  padding: 0.5em;
+}
+
+.edit-input:focus{
+    border-color: #7b489e;
+    box-shadow: 0 0 5px rgba(123, 72, 158, 0.5);
+    outline: none;
+}
+
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+@mixin btn{
+  border: none;
+  border-radius: 100%;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  height: 40px;
+  width: 40px;
+
+}
+.remove-btn{
+  @include btn;
+  background-color: #dc3545; 
+  color: #fff; 
+
+}
+
+.remove-btn:hover{
+    background-color: #bd2130;
+}
+
+.edit-btn{
+  @include btn;
+  background-color: rgb(236, 236, 67);
+  
+}
+
+.edit-btn:hover{
+  background-color: rgb(160, 160, 0);
+}
+
+.save-btn{
+  @include btn;
+  background-color: pink;
+}
+
+.save-btn:hover{
+  background-color: antiquewhite;
+}
+
+.img-btn{
+  max-width: 30px;
+  height: auto;
+}

@@ -30,7 +30,14 @@ const Dashboard = () =>{
     setTasks(updatedTasks);
     saveToLocalStorage('tasks', updatedTasks);
   };
-    
+
+  
+  const updateTask = (index, editedTask) => {
+    const updatedTasks = [...tasks];
+    updatedTasks[index] = editedTask;
+    setTasks(updatedTasks);
+    saveToLocalStorage('tasks', updatedTasks);
+  };  
     return <div className="dashboard">
         <h3>My tasks</h3> 
         <div className="new-task"><input
@@ -44,7 +51,7 @@ const Dashboard = () =>{
         
       <ul>
         {tasks.map((task, index) => (
-          <Task key={index} index={index} task={task} removeTask={removeTask} />
+          <Task key={index} index={index} task={task} removeTask={removeTask}  updateTask={updateTask} />
         ))}
       </ul>   
     </div>
