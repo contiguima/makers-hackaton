@@ -2,6 +2,11 @@
     text-align: left;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 400px;
+    word-wrap: break-word;
+    word-break: break-all;
+
 }
 
 .remove-btn{
