@@ -1,0 +1,22 @@
+.task{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove-btn{
+  background-color: #dc3545; 
+  color: #fff; 
+  border: none;
+  border-radius: 100%;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  height: 30px;
+  width: 30px;
+
+}
+
+.remove-btn:hover{
+    background-color: #bd2130;
+}
